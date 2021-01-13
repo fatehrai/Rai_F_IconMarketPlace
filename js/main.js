@@ -4,11 +4,13 @@
   // stub
   console.log('JS is linked!');
 
-let theButton = document.querySelector(".icon-button");
+let theButton = document.querySelector(".icon-button"),
+    theIcons = document.querySelectorAll(".icon");
 
 function logClick() {
-  console.log('clicked the button!');
+  console.log('clicked the button! (or icon)');
 }
 
   theButton.addEventListener('click', logClick);
+  theIcons.forEach(icon => icon.addEventlistener('click',logClick));
 })();
