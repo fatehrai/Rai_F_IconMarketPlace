@@ -1,3 +1,8 @@
 .wrapper { width: 43%; display: inline-block; }
 
 .wrapper > img { width: 100%; }
+
+#Red { cursor: pointer; }
+
+#Red:hover { fill: blue !important; }
+/* important means apply this rule no matter what other rules have been applied. */
